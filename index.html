@@ -57,8 +57,10 @@
 				});
 				$img.addEventListener('click' , ()=>{
 					j = j >= 10 ? 1 : ++j;
-					const sr = ``;
-					alert( $img.src);
+					const sr_1 = $img.src.slice(-6);
+					const sr = `imges/num_${String(j).padStart(2,'0')}.jpg`;				
+					$img.src = sr;
+					
 				}); 
 			}
 		
